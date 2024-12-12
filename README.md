@@ -1,8 +1,9 @@
 Zomato Data Analysis-Dashboard
-Problem Statement
+
+Problem Statement:-
 This dashboard helps the airlines understand their customers better. It helps the airlines know if their customers are satisfied with their services. Through different ratings, they get to know their improvement area, & thus they can improve their services by identifying these area. It also lets them know the average delay & departure time, thus since by using this dashboard they have identified this problem, they can further work on factors responsible for these unwanted delays.
 
-Steps followed
+Steps followed:-
 Step 1 : Load data into Power BI Desktop, dataset is a csv file.
 
 Step 2 : Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.
@@ -40,7 +41,8 @@ for creating new column following DAX expression was written;
   total city = DISTINCTCOUNT(zomato[city])
     
 Step 15 : New measure was created to find total count of customers.
-Insights
+
+Insights:-
 A single page report was created on Power BI Desktop & it was then published to Power BI Service.
 
 Following inferences can be drawn from the dashboard;
