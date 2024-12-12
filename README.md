@@ -1,18 +1,15 @@
-Zomato Restaurant Data Analysis
+Zomato-Dashboard
+Problem Statement
+This dashboard helps Zomato as a company to understand their customers better. It helps zomato know if their customers are satisfied with their restaurants. Through different ratings, they get to know their improvement area, & thus they can improve their services by identifying these areas. It also lets them know the average,min and max prices for two people having a specific cuisine meal at a restaurant thus since by using this dashboard they have identified this problem, they can further work on factors responsible for these unwanted factors.
 
-Problem Statement:-
-
-This dashboard helps the zomato understand their customers better. It helps the zomato know if their customers are satisfied with their services. Through different ratings, they get to know their improvement area, & thus they can improve their services by identifying these area. It also lets them know the average delay & departure time, thus since by using this dashboard they have identified this problem, they can further work on factors responsible for these unwanted delays.
-
-Steps followed:-
-
-Step 1 : Load data into Power BI Desktop, dataset is a csv file.
+Steps followed
+Step 1 : Load data into Power BI Desktop, data is collected from 2 datasets one being the zomato restaurant data in the csv format and the other being the the country dataset which is in xslv format.
 
 Step 2 : Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.
 
 Step 3 : Also since by default, profile will be opened only for 1000 rows so you need to select "column profiling based on entire dataset".
 
-Step 4 : It was observed that in none of the columns errors & empty values were present except column named "Arrival Delay".
+Step 4 : It was observed that in there were some errors in the first column "Restaurant id" which was removed using the remove errors function.
 
 Step 5 : From the zomato restaurant dataset four columns were identified which were of not any use for this analysis so they were dropped,"Address","Locality","Longitude","Latitude".
 
@@ -43,9 +40,7 @@ for creating new column following DAX expression was written;
   total city = DISTINCTCOUNT(zomato[city])
     
 Step 15 : New measure was created to find total count of customers.
-
-Insights:-
-
+Insights
 A single page report was created on Power BI Desktop & it was then published to Power BI Service.
 
 Following inferences can be drawn from the dashboard;
