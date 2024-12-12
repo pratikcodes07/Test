@@ -1,8 +1,14 @@
 Zomato-Dashboard
+
+
 Problem Statement
+
+
 This dashboard helps Zomato as a company to understand their customers better. It helps zomato know if their customers are satisfied with their restaurants. Through different ratings, they get to know their improvement area, & thus they can improve their services by identifying these areas. It also lets them know the average,min and max prices for two people having a specific cuisine meal at a restaurant thus since by using this dashboard they have identified this problem, they can further work on factors responsible for these unwanted factors.
 
 Steps followed
+
+
 Step 1 : Load data into Power BI Desktop, data is collected from 2 datasets one being the zomato restaurant data in the csv format and the other being the the country dataset which is in xslv format.
 
 Step 2 : Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.
@@ -36,7 +42,9 @@ Step 14 : Calculated column was created in which, total of restaurants,country a
 for creating new column following DAX expression was written;
 
   total restaurants = DISTINCTCOUNT(zomato[restaurants])
+  
   total country = DISTINCTCOUNT(zomato[country])
+  
   total city = DISTINCTCOUNT(zomato[city])
     
 Step 15 : New measure was created to find total count of customers.
@@ -46,7 +54,11 @@ A single page report was created on Power BI Desktop & it was then published to 
 Following inferences can be drawn from the dashboard;
 
 [1] Total Number of Restaurants = 9545
+
 [2]Max Ratings of total restaurants by cuisines
+
 a) North Indian - 3k
+
 b) Chinese - 2k
+
 c) Fastfood - 1k
